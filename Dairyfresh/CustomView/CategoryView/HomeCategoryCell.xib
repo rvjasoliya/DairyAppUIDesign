@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCategoryCell" id="OQX-ty-SeV" customClass="HomeCategoryCell" customModule="Dairyfresh" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wJj-Cx-vgV">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VdB-hc-8kX">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CuU-t3-68l">
+                                <rect key="frame" x="8" y="8" width="64" height="64"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PJO-Pm-XFT">
+                                        <rect key="frame" x="15" y="8" width="34" height="34"/>
+                                        <color key="tintColor" red="0.27058823529999998" green="0.12549019610000001" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="PJO-Pm-XFT" secondAttribute="height" multiplier="1:1" id="o0Y-E1-93l"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="Z8l-82-Pff">
+                                        <rect key="frame" x="2" y="44" width="60" height="14"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="10"/>
+                                        <color key="textColor" red="0.27058823529999998" green="0.12549019610000001" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Z8l-82-Pff" firstAttribute="top" secondItem="PJO-Pm-XFT" secondAttribute="bottom" constant="2" id="7qd-Qi-v5u"/>
+                                    <constraint firstItem="PJO-Pm-XFT" firstAttribute="top" secondItem="CuU-t3-68l" secondAttribute="top" constant="8" id="HJY-wn-Q8C"/>
+                                    <constraint firstItem="PJO-Pm-XFT" firstAttribute="centerX" secondItem="CuU-t3-68l" secondAttribute="centerX" id="QFX-PS-H2c"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z8l-82-Pff" secondAttribute="trailing" constant="2" id="f5a-Nc-mDe"/>
+                                    <constraint firstItem="Z8l-82-Pff" firstAttribute="leading" secondItem="CuU-t3-68l" secondAttribute="leading" constant="2" id="tUA-fF-2d2"/>
+                                    <constraint firstItem="PJO-Pm-XFT" firstAttribute="leading" secondItem="CuU-t3-68l" secondAttribute="leading" constant="15" id="yNG-ur-QA9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CuU-t3-68l" firstAttribute="leading" secondItem="VdB-hc-8kX" secondAttribute="leading" constant="8" id="128-fS-M1T"/>
+                            <constraint firstAttribute="trailing" secondItem="CuU-t3-68l" secondAttribute="trailing" constant="8" id="Atf-Jh-FW0"/>
+                            <constraint firstItem="CuU-t3-68l" firstAttribute="top" secondItem="VdB-hc-8kX" secondAttribute="top" constant="8" id="Len-zu-DQ3"/>
+                            <constraint firstAttribute="width" constant="80" id="MiS-4u-DFD"/>
+                            <constraint firstAttribute="height" constant="80" id="VwA-UT-O5w"/>
+                            <constraint firstAttribute="bottom" secondItem="CuU-t3-68l" secondAttribute="bottom" constant="8" id="cG3-wK-yhs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="VdB-hc-8kX" secondAttribute="bottom" id="B7S-M7-zeN"/>
+                    <constraint firstItem="VdB-hc-8kX" firstAttribute="leading" secondItem="wJj-Cx-vgV" secondAttribute="leading" id="W4J-b2-sL6"/>
+                    <constraint firstItem="VdB-hc-8kX" firstAttribute="top" secondItem="wJj-Cx-vgV" secondAttribute="top" id="fb5-EB-32M"/>
+                    <constraint firstAttribute="trailing" secondItem="VdB-hc-8kX" secondAttribute="trailing" id="kNw-K2-ghl"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="80" height="80"/>
+            <connections>
+                <outlet property="imgV" destination="PJO-Pm-XFT" id="59o-2n-9v2"/>
+                <outlet property="lblname" destination="Z8l-82-Pff" id="XNq-CW-41Y"/>
+                <outlet property="mainBackV" destination="CuU-t3-68l" id="5Ky-0W-yiv"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="224"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,84 @@
+PODS:
+  - Alamofire (5.2.2)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - DynamicBlurView (4.1.0)
+  - IQKeyboardManagerSwift (6.5.5)
+  - iVersion (1.11.5)
+  - JNKeychain (0.1.4)
+  - NotificationBar (0.1)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - SKPhotoBrowser (6.1.0)
+  - SVProgressHUD (2.2.5)
+  - SVPullToRefresh (0.4.1)
+  - SwiftyJSON (5.0.0)
+  - TKImageShowing (1.0.9):
+    - SDWebImage (~> 4.4.6)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - ChameleonFramework/Swift
+  - IQKeyboardManagerSwift
+  - iVersion
+  - JNKeychain
+  - NotificationBar (from `https://github.com/furqanmk/NotificationBar.git`)
+  - PopupDialog
+  - SKPhotoBrowser
+  - SVProgressHUD
+  - SVPullToRefresh
+  - SwiftyJSON
+  - TKImageShowing
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ChameleonFramework
+    - DynamicBlurView
+    - IQKeyboardManagerSwift
+    - iVersion
+    - JNKeychain
+    - PopupDialog
+    - SDWebImage
+    - SKPhotoBrowser
+    - SVProgressHUD
+    - SVPullToRefresh
+    - SwiftyJSON
+    - TKImageShowing
+    - Toast-Swift
+
+EXTERNAL SOURCES:
+  NotificationBar:
+    :git: https://github.com/furqanmk/NotificationBar.git
+
+CHECKOUT OPTIONS:
+  NotificationBar:
+    :commit: 1411c7e0a1da6101943625bf1b5f4bd023eb9cfe
+    :git: https://github.com/furqanmk/NotificationBar.git
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  iVersion: 3a93a89259eb3b52b0a8ba52c46a0027fa6b4d30
+  JNKeychain: fb6cc9ec95959ba46cd95d0ee6f7a05e41da9f42
+  NotificationBar: 0fc27cd2418bbd6ac7ac17cf6323b051699fa038
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SKPhotoBrowser: 343de95d89dc7913763c5dda243cc6e606e4a168
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TKImageShowing: a9c18c82070d1fe8aec59fd29533e2c5c29ca1e2
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 91382fc9bb287513cd61b536f164e16742a96926
+
+COCOAPODS: 1.9.3

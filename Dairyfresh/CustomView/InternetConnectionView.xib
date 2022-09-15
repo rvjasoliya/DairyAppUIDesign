@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InternetConnectionView" customModule="Dairyfresh" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="235"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7on-5g-bfM">
+                    <rect key="frame" x="20" y="0.0" width="321" height="235"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oh Snap!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyQ-6o-b2Y">
+                            <rect key="frame" x="114.5" y="30" width="92" height="29"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHA-h4-czk">
+                            <rect key="frame" x="2" y="79" width="317" height="49.5"/>
+                            <string key="text">Please check your internet 
+Connection</string>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1Y-Je-vAk">
+                            <rect key="frame" x="80.5" y="166" width="160" height="44"/>
+                            <color key="backgroundColor" red="0.1019607843" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="CNf-Lw-a0u"/>
+                                <constraint firstAttribute="width" constant="160" id="df2-lE-a1g"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                            <state key="normal" title="Ok">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="22"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionDismiss:" destination="-1" eventType="touchUpInside" id="c27-uy-ocd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="EyQ-6o-b2Y" firstAttribute="centerX" secondItem="7on-5g-bfM" secondAttribute="centerX" id="6Fa-Ik-TBt"/>
+                        <constraint firstItem="YHA-h4-czk" firstAttribute="top" secondItem="EyQ-6o-b2Y" secondAttribute="bottom" constant="20" id="7Lh-bb-00G"/>
+                        <constraint firstItem="h1Y-Je-vAk" firstAttribute="centerX" secondItem="YHA-h4-czk" secondAttribute="centerX" id="7uQ-JF-EEE"/>
+                        <constraint firstAttribute="trailing" secondItem="YHA-h4-czk" secondAttribute="trailing" constant="2" id="9h4-Y2-zcu"/>
+                        <constraint firstItem="h1Y-Je-vAk" firstAttribute="top" secondItem="YHA-h4-czk" secondAttribute="bottom" constant="37.5" id="YMO-rK-fCO"/>
+                        <constraint firstItem="YHA-h4-czk" firstAttribute="leading" secondItem="7on-5g-bfM" secondAttribute="leading" constant="2" id="c17-Uu-TD2"/>
+                        <constraint firstAttribute="bottom" secondItem="h1Y-Je-vAk" secondAttribute="bottom" constant="25" id="hjs-Up-Ngg"/>
+                        <constraint firstItem="EyQ-6o-b2Y" firstAttribute="top" secondItem="7on-5g-bfM" secondAttribute="top" constant="30" id="qZb-ye-3E2"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7on-5g-bfM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9w4-rF-vQA"/>
+                <constraint firstItem="7on-5g-bfM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dES-eH-E6b"/>
+                <constraint firstItem="7on-5g-bfM" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="fN2-IW-tUx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7on-5g-bfM" secondAttribute="trailing" constant="20" id="rab-Gn-kLJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="120.8" y="271.21439280359823"/>
+        </view>
+    </objects>
+</document>
